@@ -96,11 +96,10 @@ dialog img{max-height:78vh;margin:auto;border-radius:10px}dialog p{text-align:ce
 @media print{
 :root,:root[data-theme=dark]{--bg:#fff;--bg2:#fff;--card:#fff;--text:#16213e;--dim:#5a6580;--line:#dfe5f0;--tint:#eef2fa;--gt:#a87500}
 html{font-size:11.2px}
-#projects{break-before:page}
 #projects .wrap{display:grid;grid-template-columns:1fr 1fr;gap:8px}#projects .head{grid-column:1/-1}#projects .proj{margin:0}
 *{-webkit-print-color-adjust:exact;print-color-adjust:exact;transition:none!important;animation:none!important;box-shadow:none!important}
 body{background:#fff}.alt{background:#fff}
-.nav,.fade,.hero .btn,.thumbs,.gal,.nv,dialog,.certs .ph,footer{display:none!important}
+.nav,.fade,#contact,.hero .btn,.thumbs,.gal,.nv,dialog,.certs .ph,footer{display:none!important}
 .rv{opacity:1!important;transform:none!important}
 section{padding:14px 0}.hero{padding:0 0 8px}.wrap{max-width:none;padding:0 5mm}
 .hero .wrap{grid-template-columns:130px 1fr;gap:20px}.photo{width:130px;height:130px;animation:none}
@@ -110,9 +109,15 @@ h1{font-size:1.9rem}.lead{margin:4px 0}
 .tl{gap:8px}.skill{margin-bottom:8px}.grid{gap:8px}.certs{gap:8px;margin-top:8px;grid-template-columns:repeat(5,1fr)}
 .card,.skill,.cert,.head{break-inside:avoid}.head{break-after:avoid}
 .contact .card{padding:14px}.contact .lead{margin:4px auto}
-#education .tags{flex-wrap:nowrap;gap:3px;margin-top:6px}#education .tags span{font-size:.6rem;padding:0 5px;white-space:nowrap}
+#education .tags{flex-wrap:nowrap;gap:3px;margin-top:6px}#education .tags span{font-size:.72rem;padding:0 6px;white-space:nowrap}
 #experience ul{columns:2;column-gap:18px}#experience li{break-inside:avoid}
 section{padding:9px 0}.card{padding:8px 12px}.tl{gap:6px}.lead{line-height:1.6}
 .photo{width:110px;height:110px}.hero .wrap{grid-template-columns:110px 1fr}h1{font-size:1.6rem}.head{margin-bottom:6px}
 #about .card p{line-height:1.6}.cert b{padding-top:5px}.cert small{padding-bottom:5px}.certs{margin-top:6px}
+}
+.pc{display:none}
+footer .btn{margin:0}
+@media print{
+.pc{display:flex;flex-wrap:wrap;gap:4px 14px;margin-top:8px;padding-top:6px;border-top:1px solid var(--line);font-size:.8rem;color:var(--dim)}.pc i{color:var(--gt)}
+#projects .card{padding:6px 10px}#projects .card p{font-size:.8rem;line-height:1.5}#projects h3{font-size:.9rem}#projects .tags{margin-top:4px}
 }

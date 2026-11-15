@@ -22,6 +22,6 @@ const ok=a.filter(Boolean);if(!ok.length)return;const box=$('.shot',g),th=$('.th
 const mi=new Image();mi.alt=t;box.append(mi);box.onclick=()=>open(ok,cur,t);
 const set=i=>{cur=i;mi.src=ok[i];$$('img',th).forEach((x,j)=>x.classList.toggle('on',j===i))};
 if(ok.length>1)ok.forEach((s,i)=>{const x=new Image();x.src=s;x.alt='';x.onclick=()=>set(i);th.append(x)});set(0)})});
-$('#pdf').onclick=()=>{const d=document.title;document.title='رزومه مهدی لطیفی';
+$('#print').onclick=()=>{const d=document.title;document.title='رزومه مهدی لطیفی';
 $$('.rv').forEach(e=>e.classList.add('in'));$$('.track i').forEach(i=>i.style.width=i.dataset.w+'%');
 setTimeout(()=>print(),300);onafterprint=()=>document.title=d};
